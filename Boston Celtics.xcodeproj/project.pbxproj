@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C823B68240CE33E00AEAA07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C823B67240CE33E00AEAA07 /* AppDelegate.swift */; };
+		0C823B6A240CE33E00AEAA07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C823B69240CE33E00AEAA07 /* SceneDelegate.swift */; };
+		0C823B6C240CE33E00AEAA07 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C823B6B240CE33E00AEAA07 /* MasterViewController.swift */; };
+		0C823B6E240CE33E00AEAA07 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C823B6D240CE33E00AEAA07 /* DetailViewController.swift */; };
+		0C823B71240CE33E00AEAA07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C823B6F240CE33E00AEAA07 /* Main.storyboard */; };
+		0C823B73240CE33F00AEAA07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C823B72240CE33F00AEAA07 /* Assets.xcassets */; };
+		0C823B76240CE33F00AEAA07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C823B74240CE33F00AEAA07 /* LaunchScreen.storyboard */; };
+		0C823B81240CE33F00AEAA07 /* Boston_CelticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C823B80240CE33F00AEAA07 /* Boston_CelticsTests.swift */; };
+		0C823B8C240CE33F00AEAA07 /* Boston_CelticsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C823B8B240CE33F00AEAA07 /* Boston_CelticsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C823B7D240CE33F00AEAA07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C823B5C240CE33E00AEAA07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C823B63240CE33E00AEAA07;
+			remoteInfo = "Boston Celtics";
+		};
+		0C823B88240CE33F00AEAA07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C823B5C240CE33E00AEAA07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C823B63240CE33E00AEAA07;
+			remoteInfo = "Boston Celtics";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C823B64240CE33E00AEAA07 /* Boston Celtics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Boston Celtics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C823B67240CE33E00AEAA07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0C823B69240CE33E00AEAA07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0C823B6B240CE33E00AEAA07 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		0C823B6D240CE33E00AEAA07 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0C823B70240CE33E00AEAA07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0C823B72240CE33F00AEAA07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C823B75240CE33F00AEAA07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0C823B77240CE33F00AEAA07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C823B7C240CE33F00AEAA07 /* Boston CelticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Boston CelticsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C823B80240CE33F00AEAA07 /* Boston_CelticsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boston_CelticsTests.swift; sourceTree = "<group>"; };
+		0C823B82240CE33F00AEAA07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C823B87240CE33F00AEAA07 /* Boston CelticsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Boston CelticsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C823B8B240CE33F00AEAA07 /* Boston_CelticsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boston_CelticsUITests.swift; sourceTree = "<group>"; };
+		0C823B8D240CE33F00AEAA07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C823B61240CE33E00AEAA07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C823B79240CE33F00AEAA07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C823B84240CE33F00AEAA07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C823B5B240CE33E00AEAA07 = {
+			isa = PBXGroup;
+			children = (
+				0C823B66240CE33E00AEAA07 /* Boston Celtics */,
+				0C823B7F240CE33F00AEAA07 /* Boston CelticsTests */,
+				0C823B8A240CE33F00AEAA07 /* Boston CelticsUITests */,
+				0C823B65240CE33E00AEAA07 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0C823B65240CE33E00AEAA07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C823B64240CE33E00AEAA07 /* Boston Celtics.app */,
+				0C823B7C240CE33F00AEAA07 /* Boston CelticsTests.xctest */,
+				0C823B87240CE33F00AEAA07 /* Boston CelticsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C823B66240CE33E00AEAA07 /* Boston Celtics */ = {
+			isa = PBXGroup;
+			children = (
+				0C823B67240CE33E00AEAA07 /* AppDelegate.swift */,
+				0C823B69240CE33E00AEAA07 /* SceneDelegate.swift */,
+				0C823B6B240CE33E00AEAA07 /* MasterViewController.swift */,
+				0C823B6D240CE33E00AEAA07 /* DetailViewController.swift */,
+				0C823B6F240CE33E00AEAA07 /* Main.storyboard */,
+				0C823B72240CE33F00AEAA07 /* Assets.xcassets */,
+				0C823B74240CE33F00AEAA07 /* LaunchScreen.storyboard */,
+				0C823B77240CE33F00AEAA07 /* Info.plist */,
+			);
+			path = "Boston Celtics";
+			sourceTree = "<group>";
+		};
+		0C823B7F240CE33F00AEAA07 /* Boston CelticsTests */ = {
+			isa = PBXGroup;
+			children = (
+				0C823B80240CE33F00AEAA07 /* Boston_CelticsTests.swift */,
+				0C823B82240CE33F00AEAA07 /* Info.plist */,
+			);
+			path = "Boston CelticsTests";
+			sourceTree = "<group>";
+		};
+		0C823B8A240CE33F00AEAA07 /* Boston CelticsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0C823B8B240CE33F00AEAA07 /* Boston_CelticsUITests.swift */,
+				0C823B8D240CE33F00AEAA07 /* Info.plist */,
+			);
+			path = "Boston CelticsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C823B63240CE33E00AEAA07 /* Boston Celtics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C823B90240CE33F00AEAA07 /* Build configuration list for PBXNativeTarget "Boston Celtics" */;
+			buildPhases = (
+				0C823B60240CE33E00AEAA07 /* Sources */,
+				0C823B61240CE33E00AEAA07 /* Frameworks */,
+				0C823B62240CE33E00AEAA07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Boston Celtics";
+			productName = "Boston Celtics";
+			productReference = 0C823B64240CE33E00AEAA07 /* Boston Celtics.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0C823B7B240CE33F00AEAA07 /* Boston CelticsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C823B93240CE33F00AEAA07 /* Build configuration list for PBXNativeTarget "Boston CelticsTests" */;
+			buildPhases = (
+				0C823B78240CE33F00AEAA07 /* Sources */,
+				0C823B79240CE33F00AEAA07 /* Frameworks */,
+				0C823B7A240CE33F00AEAA07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C823B7E240CE33F00AEAA07 /* PBXTargetDependency */,
+			);
+			name = "Boston CelticsTests";
+			productName = "Boston CelticsTests";
+			productReference = 0C823B7C240CE33F00AEAA07 /* Boston CelticsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0C823B86240CE33F00AEAA07 /* Boston CelticsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C823B96240CE33F00AEAA07 /* Build configuration list for PBXNativeTarget "Boston CelticsUITests" */;
+			buildPhases = (
+				0C823B83240CE33F00AEAA07 /* Sources */,
+				0C823B84240CE33F00AEAA07 /* Frameworks */,
+				0C823B85240CE33F00AEAA07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C823B89240CE33F00AEAA07 /* PBXTargetDependency */,
+			);
+			name = "Boston CelticsUITests";
+			productName = "Boston CelticsUITests";
+			productReference = 0C823B87240CE33F00AEAA07 /* Boston CelticsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C823B5C240CE33E00AEAA07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Liam Hogan";
+				TargetAttributes = {
+					0C823B63240CE33E00AEAA07 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					0C823B7B240CE33F00AEAA07 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 0C823B63240CE33E00AEAA07;
+					};
+					0C823B86240CE33F00AEAA07 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 0C823B63240CE33E00AEAA07;
+					};
+				};
+			};
+			buildConfigurationList = 0C823B5F240CE33E00AEAA07 /* Build configuration list for PBXProject "Boston Celtics" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0C823B5B240CE33E00AEAA07;
+			productRefGroup = 0C823B65240CE33E00AEAA07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C823B63240CE33E00AEAA07 /* Boston Celtics */,
+				0C823B7B240CE33F00AEAA07 /* Boston CelticsTests */,
+				0C823B86240CE33F00AEAA07 /* Boston CelticsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C823B62240CE33E00AEAA07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C823B76240CE33F00AEAA07 /* LaunchScreen.storyboard in Resources */,
+				0C823B73240CE33F00AEAA07 /* Assets.xcassets in Resources */,
+				0C823B71240CE33E00AEAA07 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C823B7A240CE33F00AEAA07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C823B85240CE33F00AEAA07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C823B60240CE33E00AEAA07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C823B68240CE33E00AEAA07 /* AppDelegate.swift in Sources */,
+				0C823B6A240CE33E00AEAA07 /* SceneDelegate.swift in Sources */,
+				0C823B6C240CE33E00AEAA07 /* MasterViewController.swift in Sources */,
+				0C823B6E240CE33E00AEAA07 /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C823B78240CE33F00AEAA07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C823B81240CE33F00AEAA07 /* Boston_CelticsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C823B83240CE33F00AEAA07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C823B8C240CE33F00AEAA07 /* Boston_CelticsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C823B7E240CE33F00AEAA07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C823B63240CE33E00AEAA07 /* Boston Celtics */;
+			targetProxy = 0C823B7D240CE33F00AEAA07 /* PBXContainerItemProxy */;
+		};
+		0C823B89240CE33F00AEAA07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C823B63240CE33E00AEAA07 /* Boston Celtics */;
+			targetProxy = 0C823B88240CE33F00AEAA07 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0C823B6F240CE33E00AEAA07 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C823B70240CE33E00AEAA07 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0C823B74240CE33F00AEAA07 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C823B75240CE33F00AEAA07 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0C823B8E240CE33F00AEAA07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0C823B8F240CE33F00AEAA07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0C823B91240CE33F00AEAA07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Boston Celtics/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liamhogan.Boston-Celtics";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0C823B92240CE33F00AEAA07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Boston Celtics/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liamhogan.Boston-Celtics";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0C823B94240CE33F00AEAA07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Boston CelticsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liamhogan.Boston-CelticsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Boston Celtics.app/Boston Celtics";
+			};
+			name = Debug;
+		};
+		0C823B95240CE33F00AEAA07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Boston CelticsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liamhogan.Boston-CelticsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Boston Celtics.app/Boston Celtics";
+			};
+			name = Release;
+		};
+		0C823B97240CE33F00AEAA07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Boston CelticsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liamhogan.Boston-CelticsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Boston Celtics";
+			};
+			name = Debug;
+		};
+		0C823B98240CE33F00AEAA07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Boston CelticsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liamhogan.Boston-CelticsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Boston Celtics";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C823B5F240CE33E00AEAA07 /* Build configuration list for PBXProject "Boston Celtics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C823B8E240CE33F00AEAA07 /* Debug */,
+				0C823B8F240CE33F00AEAA07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C823B90240CE33F00AEAA07 /* Build configuration list for PBXNativeTarget "Boston Celtics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C823B91240CE33F00AEAA07 /* Debug */,
+				0C823B92240CE33F00AEAA07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C823B93240CE33F00AEAA07 /* Build configuration list for PBXNativeTarget "Boston CelticsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C823B94240CE33F00AEAA07 /* Debug */,
+				0C823B95240CE33F00AEAA07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C823B96240CE33F00AEAA07 /* Build configuration list for PBXNativeTarget "Boston CelticsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C823B97240CE33F00AEAA07 /* Debug */,
+				0C823B98240CE33F00AEAA07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C823B5C240CE33E00AEAA07 /* Project object */;
+}
