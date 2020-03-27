@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C4553FC242C2D70003110BA /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4553FB242C2D70003110BA /* Player.swift */; };
+		0C4553FE242C2FFE003110BA /* StorageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4553FD242C2FFE003110BA /* StorageHandler.swift */; };
+		0C455400242C3B23003110BA /* PlayerUITableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4553FF242C3B23003110BA /* PlayerUITableCell.swift */; };
 		0C823B68240CE33E00AEAA07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C823B67240CE33E00AEAA07 /* AppDelegate.swift */; };
 		0C823B6A240CE33E00AEAA07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C823B69240CE33E00AEAA07 /* SceneDelegate.swift */; };
 		0C823B6C240CE33E00AEAA07 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C823B6B240CE33E00AEAA07 /* MasterViewController.swift */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C4553FB242C2D70003110BA /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		0C4553FD242C2FFE003110BA /* StorageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageHandler.swift; sourceTree = "<group>"; };
+		0C4553FF242C3B23003110BA /* PlayerUITableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerUITableCell.swift; sourceTree = "<group>"; };
 		0C823B64240CE33E00AEAA07 /* Boston Celtics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Boston Celtics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C823B67240CE33E00AEAA07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C823B69240CE33E00AEAA07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +115,9 @@
 				0C823B72240CE33F00AEAA07 /* Assets.xcassets */,
 				0C823B74240CE33F00AEAA07 /* LaunchScreen.storyboard */,
 				0C823B77240CE33F00AEAA07 /* Info.plist */,
+				0C4553FB242C2D70003110BA /* Player.swift */,
+				0C4553FD242C2FFE003110BA /* StorageHandler.swift */,
+				0C4553FF242C3B23003110BA /* PlayerUITableCell.swift */,
 			);
 			path = "Boston Celtics";
 			sourceTree = "<group>";
@@ -262,9 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C455400242C3B23003110BA /* PlayerUITableCell.swift in Sources */,
 				0C823B68240CE33E00AEAA07 /* AppDelegate.swift in Sources */,
 				0C823B6A240CE33E00AEAA07 /* SceneDelegate.swift in Sources */,
+				0C4553FE242C2FFE003110BA /* StorageHandler.swift in Sources */,
 				0C823B6C240CE33E00AEAA07 /* MasterViewController.swift in Sources */,
+				0C4553FC242C2D70003110BA /* Player.swift in Sources */,
 				0C823B6E240CE33E00AEAA07 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
