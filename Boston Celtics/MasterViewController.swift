@@ -65,9 +65,16 @@ class MasterViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PlayerUITableViewCell
         let object = objects[indexPath.row]
-        cell.textLabel!.text = object.playerName
+        cell.playerNameLabel.text! = object.playerName
+        cell.playerNumberLabel.text! = object.playerNumber
+        
+        cell.playerName = object.playerName;
+        cell.playerNumber = object.playerNumber;
+        cell.playerPosition = object.playerPosition;
+        cell.playerCollege = object.playerCollege;
+        
         return cell
     }
 
