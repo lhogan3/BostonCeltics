@@ -39,7 +39,7 @@ class DetailViewController: UIViewController {
         configureView()
     }
 
-    var detailItem: Player? {
+    var detailItem: Player?{
         didSet {
             // Update the view.
             configureView()
@@ -48,4 +48,3 @@ class DetailViewController: UIViewController {
 
 
 }
-

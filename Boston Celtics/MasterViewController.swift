@@ -35,9 +35,15 @@ class MasterViewController: UITableViewController {
     @objc
     func insertNewObject(_ sender: Any) {
         
+<<<<<<< HEAD
         let newPlayer = Player(playerName: "liam", playerNumber: 0, playerPosition: "SF", playerCollege: "Duke");
         
         objects.insert(newPlayer, at: 0)
+=======
+        let newItem = Player(playerName: "me", playerNumber: 0, playerPosition: "me", playerCollege: "me")
+        
+        objects.insert(newItem, at: 0)
+>>>>>>> fb32a37198289750d98ed350f9cfb71553d14f1d
         let indexPath = IndexPath(row: 0, section: 0)
         tableView.insertRows(at: [indexPath], with: .automatic)
     }
