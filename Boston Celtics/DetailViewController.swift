@@ -9,15 +9,26 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
-
-
+    
+    @IBOutlet weak var playerNameLabel: UILabel!
+    @IBOutlet weak var playerNumberLabel: UILabel!
+    @IBOutlet weak var playerPositionLabel: UILabel!
+    @IBOutlet weak var playerCollegeLabel: UILabel!
+    
     func configureView() {
         // Update the user interface for the detail item.
         if let detail = detailItem {
-            if let label = detailDescriptionLabel {
-                label.text = detail.description
+            if let label = playerNameLabel {
+                label.text = detail.playerName
+            }
+            if let label = playerNumberLabel {
+                label.text = detail.playerNumber
+            }
+            if let label = playerPositionLabel {
+                label.text = detail.playerPosition
+            }
+            if let label = playerCollegeLabel {
+                label.text = detail.playerCollege
             }
         }
     }
@@ -28,7 +39,7 @@ class DetailViewController: UIViewController {
         configureView()
     }
 
-    var detailItem: NSDate? {
+    var detailItem: Player? {
         didSet {
             // Update the view.
             configureView()
