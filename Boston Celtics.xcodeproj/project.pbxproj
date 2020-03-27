@@ -16,6 +16,7 @@
 		0C823B76240CE33F00AEAA07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C823B74240CE33F00AEAA07 /* LaunchScreen.storyboard */; };
 		0C823B81240CE33F00AEAA07 /* Boston_CelticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C823B80240CE33F00AEAA07 /* Boston_CelticsTests.swift */; };
 		0C823B8C240CE33F00AEAA07 /* Boston_CelticsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C823B8B240CE33F00AEAA07 /* Boston_CelticsUITests.swift */; };
+		ECC1EAF9242E6BCC002DF101 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC1EAF8242E6BCC002DF101 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		0C823B87240CE33F00AEAA07 /* Boston CelticsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Boston CelticsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C823B8B240CE33F00AEAA07 /* Boston_CelticsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boston_CelticsUITests.swift; sourceTree = "<group>"; };
 		0C823B8D240CE33F00AEAA07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECC1EAF8242E6BCC002DF101 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				0C823B72240CE33F00AEAA07 /* Assets.xcassets */,
 				0C823B74240CE33F00AEAA07 /* LaunchScreen.storyboard */,
 				0C823B77240CE33F00AEAA07 /* Info.plist */,
+				ECC1EAF8242E6BCC002DF101 /* Player.swift */,
 			);
 			path = "Boston Celtics";
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				0C823B68240CE33E00AEAA07 /* AppDelegate.swift in Sources */,
 				0C823B6A240CE33E00AEAA07 /* SceneDelegate.swift in Sources */,
 				0C823B6C240CE33E00AEAA07 /* MasterViewController.swift in Sources */,
+				ECC1EAF9242E6BCC002DF101 /* Player.swift in Sources */,
 				0C823B6E240CE33E00AEAA07 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
