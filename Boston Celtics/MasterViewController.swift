@@ -34,9 +34,6 @@ class MasterViewController: UITableViewController {
 
     @objc
     func insertNewObject(_ sender: Any) {
-//        objects.insert(Player(playerName: "Liam", playerNumber: 0, playerPosition: "PG", playerCollege: "Duke"), at: 0)
-//        let indexPath = IndexPath(row: 0, section: 0)
-//        tableView.insertRows(at: [indexPath], with: .automatic)
         performSegue(withIdentifier: "showAddPlayer", sender: self)
     }
 

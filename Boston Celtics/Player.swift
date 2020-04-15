@@ -14,9 +14,9 @@ class Player{
     var playerPosition:String;
     var playerCollege:String;
     
-    init(playerName:String, playerNumber:Int, playerPosition:String, playerCollege:String) {
+    init(playerName:String, playerNumber:String, playerPosition:String, playerCollege:String) {
         self.playerName = playerName;
-        self.playerNumber = "\(playerNumber)";
+        self.playerNumber = playerNumber;
         self.playerPosition = playerPosition;
         self.playerCollege = playerCollege;
     }
