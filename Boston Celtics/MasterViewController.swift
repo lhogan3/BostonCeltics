@@ -11,11 +11,13 @@ import UIKit
 class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
-    var objects = StorageHandler.shared.players;
+    var objects = StorageHandler.shared.load();
 
 
     override func viewDidLoad() {
+        //objects = StorageHandler.shared.load();
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
         navigationItem.leftBarButtonItem = editButtonItem
 
@@ -92,4 +94,5 @@ class MasterViewController: UITableViewController {
 
 
 }
+
 

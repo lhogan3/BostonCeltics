@@ -11,10 +11,10 @@ import Foundation
 class StorageHandler{
     static let shared: StorageHandler = StorageHandler();
     
-    var players: [Player];
+    var players: [Player] = [Player]();
     
     private init(){
-        players = [Player]()
+        self.players = self.load();
 //        players.append(Player(playerName: "Jaylen Brown", playerNumber: 7, playerPosition: "SG", playerCollege: "California"))
 //        players.append(Player(playerName: "Carsen Edwards", playerNumber: 4, playerPosition: "PG", playerCollege: "Purdue"))
 //        players.append(Player(playerName: "Tacko Fall", playerNumber: 99, playerPosition: "C", playerCollege: "UCF"))
@@ -33,4 +33,23 @@ class StorageHandler{
 //        players.append(Player(playerName: "Grant Williams", playerNumber: 12, playerPosition: "PF", playerCollege: "Tennessee"))
 //        players.append(Player(playerName: "Robert Williams III", playerNumber: 44, playerPosition: "C", playerCollege: "Texas A&M"))
     }
+    
+    func save() {
+        if let savedData = try? NSKeyedArchiver.archivedData(withRootObject: players, requiringSecureCoding: false) {
+            let defaults = UserDefaults.standard
+            defaults.set(savedData, forKey: "players")
+        }
+    }
+    
+    func load() -> [Player] {
+        let defaults = UserDefaults.standard
+        if let savedPlayers = defaults.object(forKey: "players") as? Data {
+            if let decodedPlayers = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(savedPlayers) as? [Player] {
+                return decodedPlayers
+            }
+        }
+        return [Player]()
+    }
+    
 }
+

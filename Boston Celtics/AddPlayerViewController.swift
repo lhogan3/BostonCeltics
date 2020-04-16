@@ -27,6 +27,7 @@ class AddPlayerViewController: UIViewController, UITextFieldDelegate{
         let newPlayer = Player(playerName: newPlayerName, playerNumber: newPlayerNumber, playerPosition: newPlayerPosition, playerCollege: newPlayerCollege);
         
         StorageHandler.shared.players.append(newPlayer);
+        StorageHandler.shared.save();
         performSegue(withIdentifier: "backToTable", sender: self);
         
     }

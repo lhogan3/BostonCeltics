@@ -8,7 +8,8 @@
 
 import Foundation
 
-class Player{
+class Player: NSObject, NSCoding{
+    
     var playerName:String;
     var playerNumber:String;
     var playerPosition:String;
@@ -20,4 +21,27 @@ class Player{
         self.playerPosition = playerPosition;
         self.playerCollege = playerCollege;
     }
+    
+    
+    func encode(with coder: NSCoder) {
+        coder.encode(self.playerName, forKey: "name")
+        coder.encode(self.playerNumber, forKey: "number")
+        coder.encode(self.playerPosition, forKey: "position")
+        coder.encode(self.playerCollege, forKey: "college")
+       }
+    
+    required convenience init?(coder decoder: NSCoder){
+        guard
+            let name = decoder.decodeObject(forKey: "name") as? String,
+            let number = decoder.decodeObject(forKey: "number") as? String,
+            let position = decoder.decodeObject(forKey: "position") as? String,
+            let college = decoder.decodeObject(forKey: "college") as? String
+        else { return nil }
+        self.init(
+            playerName: name,
+            playerNumber: number,
+            playerPosition: position,
+            playerCollege: college)
+    }
 }
+
