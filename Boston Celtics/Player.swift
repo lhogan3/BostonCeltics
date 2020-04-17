@@ -14,12 +14,14 @@ class Player: NSObject, NSCoding{
     var playerNumber:String;
     var playerPosition:String;
     var playerCollege:String;
+    var index:Int;
     
     init(playerName:String, playerNumber:String, playerPosition:String, playerCollege:String) {
         self.playerName = playerName;
         self.playerNumber = playerNumber;
         self.playerPosition = playerPosition;
         self.playerCollege = playerCollege;
+        self.index = 0;
     }
     
     

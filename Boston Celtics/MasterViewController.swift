@@ -65,6 +65,7 @@ class MasterViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //let teamNameTableCell = tableView.dequeueReusableCell(withIdentifier: "Table View Cell", for: indexPath)
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PlayerUITableViewCell
         let object = objects[indexPath.row]
         cell.playerNameLabel.text! = object.playerName
@@ -74,6 +75,8 @@ class MasterViewController: UITableViewController {
         cell.playerNumber = object.playerNumber;
         cell.playerPosition = object.playerPosition;
         cell.playerCollege = object.playerCollege;
+        
+        object.index = indexPath.row;
         
         return cell
     }
@@ -86,8 +89,12 @@ class MasterViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             objects.remove(at: indexPath.row)
+            StorageHandler.shared.players.remove(at: indexPath.row);
+            StorageHandler.shared.save();
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
+            print("happens when you touch the thing that you want to edit")
+            
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
         }
     }

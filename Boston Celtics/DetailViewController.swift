@@ -14,9 +14,13 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var playerNumberLabel: UILabel!
     @IBOutlet weak var playerPositionLabel: UILabel!
     @IBOutlet weak var playerCollegeLabel: UILabel!
+    @IBOutlet weak var deletePlayer: UIToolbar!
+    
+    
     
     func configureView() {
         // Update the user interface for the detail item.
+        
         if let detail = detailItem {
             if let label = playerNameLabel {
                 label.text = detail.playerName
@@ -35,6 +39,10 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+
+        
         // Do any additional setup after loading the view.
         configureView()
     }
@@ -44,6 +52,13 @@ class DetailViewController: UIViewController {
             // Update the view.
             configureView()
         }
+    }
+    
+    @IBAction func deletePlayer(_ sender: Any) {
+        //let index = StorageHandler.shared.players.firstIndex(of: detailItem!)!
+        StorageHandler.shared.players.remove(at: detailItem!.index);
+        StorageHandler.shared.save();
+        performSegue(withIdentifier: "backToMaster", sender: self);
     }
 
 
