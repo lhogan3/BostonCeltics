@@ -88,18 +88,25 @@ class MasterViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            objects.remove(at: indexPath.row)
-            StorageHandler.shared.players.remove(at: indexPath.row);
-            StorageHandler.shared.save();
-            tableView.deleteRows(at: [indexPath], with: .fade)
+            let alert = UIAlertController(title: "Are you sure you want to delete this plaer?", message: "This cannot be undone.", preferredStyle: .alert)
+            
+            let defaultAction = UIAlertAction(title: "Confirm", style: .default) { (action) in
+                StorageHandler.shared.players.remove(at: indexPath.row);
+                self.objects.remove(at: indexPath.row)
+                StorageHandler.shared.save();
+                tableView.deleteRows(at: [indexPath], with: .fade)
+                let count = 0;
+                self.objects.forEach { object in
+                    object.index = count;
+                }
+            }
+            alert.addAction(defaultAction)
+            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+            self.present(alert, animated: true)
         } else if editingStyle == .insert {
             print("happens when you touch the thing that you want to edit")
             
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
         }
     }
-
-
 }
-
-

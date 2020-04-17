@@ -39,10 +39,6 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-
-        
         // Do any additional setup after loading the view.
         configureView()
     }
@@ -55,8 +51,7 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func deletePlayer(_ sender: Any) {
-        
-        let alert = UIAlertController(title: "Are you sure you want to delete this plaer?", message: "This cannot be undone.", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Are you sure you want to delete this player?", message: "This cannot be undone.", preferredStyle: .alert)
         
         let defaultAction = UIAlertAction(title: "Confirm", style: .default) { (action) in
             StorageHandler.shared.players.remove(at: self.detailItem!.index);
