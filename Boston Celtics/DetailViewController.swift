@@ -55,12 +55,16 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func deletePlayer(_ sender: Any) {
-        //let index = StorageHandler.shared.players.firstIndex(of: detailItem!)!
-        StorageHandler.shared.players.remove(at: detailItem!.index);
-        StorageHandler.shared.save();
-        performSegue(withIdentifier: "backToMaster", sender: self);
+        
+        let alert = UIAlertController(title: "Are you sure you want to delete this plaer?", message: "This cannot be undone.", preferredStyle: .alert)
+        
+        let defaultAction = UIAlertAction(title: "Confirm", style: .default) { (action) in
+            StorageHandler.shared.players.remove(at: self.detailItem!.index);
+            StorageHandler.shared.save();
+            self.performSegue(withIdentifier: "backToMaster", sender: self);
+        }
+        alert.addAction(defaultAction)
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        self.present(alert, animated: true)
     }
-
-
 }
-
