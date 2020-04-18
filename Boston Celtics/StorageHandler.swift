@@ -45,7 +45,7 @@ class StorageHandler{
         let defaults = UserDefaults.standard
         if let savedPlayers = defaults.object(forKey: "players") as? Data {
             if let decodedPlayers = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(savedPlayers) as? [Player] {
-                return decodedPlayers
+                return decodedPlayers.sorted(by: { $0.playerName < $1.playerName })
             }
         }
         return [Player]()

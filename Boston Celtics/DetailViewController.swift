@@ -66,4 +66,16 @@ class DetailViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         self.present(alert, animated: true)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toEditPlayer"{
+            let vc = segue.destination as! EditPlayerViewController;
+            vc.currentPlayer = self.detailItem!;
+        }
+    }
+
+    @IBAction func editPlayer(_ sender: Any) {
+        performSegue(withIdentifier: "toEditPlayer", sender: self)
+    }
+    
 }
