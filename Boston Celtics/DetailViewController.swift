@@ -15,6 +15,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var playerPositionLabel: UILabel!
     @IBOutlet weak var playerCollegeLabel: UILabel!
     @IBOutlet weak var deletePlayer: UIToolbar!
+    @IBOutlet weak var playerPhoto: UIImageView!
     
     
     
@@ -33,6 +34,9 @@ class DetailViewController: UIViewController {
             }
             if let label = playerCollegeLabel {
                 label.text = detail.playerCollege
+            }
+            if let photo = playerPhoto {
+                photo.image = UIImage(named: detail.playerName);
             }
         }
     }

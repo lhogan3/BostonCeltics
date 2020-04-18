@@ -65,11 +65,11 @@ class MasterViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //let teamNameTableCell = tableView.dequeueReusableCell(withIdentifier: "Table View Cell", for: indexPath)
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PlayerUITableViewCell
         let object = objects[indexPath.row]
         cell.playerNameLabel.text! = object.playerName
-        cell.playerNumberLabel.text! = object.playerNumber
+        cell.playerNumberLabel.text! = object.playerNumber;
+        cell.playerPhoto.image = UIImage(named: object.playerName);
         
         cell.playerName = object.playerName;
         cell.playerNumber = object.playerNumber;
@@ -88,7 +88,7 @@ class MasterViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            let alert = UIAlertController(title: "Are you sure you want to delete this plaer?", message: "This cannot be undone.", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Are you sure you want to delete this player?", message: "This cannot be undone.", preferredStyle: .alert)
             
             let defaultAction = UIAlertAction(title: "Confirm", style: .default) { (action) in
                 StorageHandler.shared.players.remove(at: indexPath.row);
