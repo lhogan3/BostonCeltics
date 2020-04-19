@@ -69,8 +69,12 @@ class MasterViewController: UITableViewController {
         let object = objects[indexPath.row]
         cell.playerNameLabel.text! = object.playerName
         cell.playerNumberLabel.text! = object.playerNumber;
-        cell.playerPhoto.image = UIImage(named: object.playerName);
-        
+        if(StorageHandler.shared.playersForChecking.contains(object.playerName)){
+            cell.playerPhoto.image = UIImage(named: object.playerName);
+        }
+        else{
+            cell.playerPhoto.image = UIImage(named: "logo");
+        }
         cell.playerName = object.playerName;
         cell.playerNumber = object.playerNumber;
         cell.playerPosition = object.playerPosition;

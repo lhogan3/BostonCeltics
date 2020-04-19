@@ -48,7 +48,7 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="cWH-bq-BDu">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="cWH-bq-BDu">
                                 <rect key="frame" x="87" y="197" width="240" height="465.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fK2-3k-EFd">
@@ -84,6 +84,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="cWH-bq-BDu" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="1Le-zY-JmL"/>
+                            <constraint firstItem="cWH-bq-BDu" firstAttribute="centerY" secondItem="svH-Pt-448" secondAttribute="centerY" id="4gk-sl-Dqo"/>
+                            <constraint firstItem="cWH-bq-BDu" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="Z2a-p2-gpw"/>
                             <constraint firstItem="cWH-bq-BDu" firstAttribute="centerY" secondItem="svH-Pt-448" secondAttribute="centerY" id="rlB-Ck-sEz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VUw-jc-0yf"/>
@@ -110,11 +112,11 @@
             <objects>
                 <viewController id="zj6-N7-KS8" customClass="AddPlayerViewController" customModule="Boston_Celtics" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cfr-X1-owp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="pK8-Hs-X1p">
-                                <rect key="frame" x="30.5" y="8.5" width="353" height="825"/>
+                                <rect key="frame" x="30.5" y="35.5" width="353" height="825"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Zq8-Ld-SfD">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="307"/>
@@ -221,7 +223,7 @@
             <objects>
                 <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="7bK-jq-Zjz" customClass="MasterViewController" customModule="Boston_Celtics" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="r7i-6Z-zg0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
@@ -388,7 +390,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Tll-UG-LXB"/>
-        <segue reference="x1n-nh-2PZ"/>
+        <segue reference="aV1-4D-ASb"/>
         <segue reference="GKi-kA-LjT"/>
     </inferredMetricsTieBreakers>
     <resources>

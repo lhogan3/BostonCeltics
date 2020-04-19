@@ -36,7 +36,12 @@ class DetailViewController: UIViewController {
                 label.text = detail.playerCollege
             }
             if let photo = playerPhoto {
-                photo.image = UIImage(named: detail.playerName);
+                if(StorageHandler.shared.playersForChecking.contains(detail.playerName)){
+                    photo.image = UIImage(named: detail.playerName);
+                }
+                else{
+                    photo.image = UIImage(named: "logo");
+                }
             }
         }
     }
