@@ -34,7 +34,7 @@ class EditPlayerViewController: UIViewController, UITextFieldDelegate{
         StorageHandler.shared.players.remove(at: currentPlayer.index)
         StorageHandler.shared.players.insert(newPlayer, at: newPlayer.index);
         StorageHandler.shared.save();
-        performSegue(withIdentifier: "backToDetail", sender: self);
+        performSegue(withIdentifier: "backToMaster", sender: self);
     }
     
     override func viewDidLoad() {
@@ -79,10 +79,10 @@ class EditPlayerViewController: UIViewController, UITextFieldDelegate{
         button.isEnabled = true;
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! DetailViewController;
-        vc.detailItem = currentPlayer;
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let vc = segue.destination as! DetailViewController;
+//        vc.detailItem = currentPlayer;
+//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning();

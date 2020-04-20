@@ -65,24 +65,48 @@ class MasterViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PlayerUITableViewCell
-        let object = objects[indexPath.row]
-        cell.playerNameLabel.text! = object.playerName
-        cell.playerNumberLabel.text! = object.playerNumber;
-        if(StorageHandler.shared.playersForChecking.contains(object.playerName)){
-            cell.playerPhoto.image = UIImage(named: object.playerName);
+        if(indexPath.row % 2 == 0){
+            let cell = tableView.dequeueReusableCell(withIdentifier: "GrayCell", for: indexPath) as! PlayerUITableViewCell
+            let object = objects[indexPath.row]
+            cell.grayPlayerName.text! = object.playerName
+            cell.grayPlayerNumber.text! = object.playerNumber;
+            if(StorageHandler.shared.playersForChecking.contains(object.playerName)){
+                cell.grayPlayerPhoto.image = UIImage(named: object.playerName);
+            }
+            else{
+                cell.grayPlayerPhoto.image = UIImage(named: "logo");
+            }
+            cell.playerName = object.playerName;
+            cell.playerNumber = object.playerNumber;
+            cell.playerPosition = object.playerPosition;
+            cell.playerCollege = object.playerCollege;
+            
+            object.index = indexPath.row;
+            
+            return cell
         }
-        else{
-            cell.playerPhoto.image = UIImage(named: "logo");
+        
+        else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PlayerUITableViewCell
+            let object = objects[indexPath.row]
+            cell.playerNameLabel.text! = object.playerName
+            cell.playerNumberLabel.text! = object.playerNumber;
+            if(StorageHandler.shared.playersForChecking.contains(object.playerName)){
+                cell.playerPhoto.image = UIImage(named: object.playerName);
+            }
+            else{
+                cell.playerPhoto.image = UIImage(named: "logo");
+            }
+            cell.playerName = object.playerName;
+            cell.playerNumber = object.playerNumber;
+            cell.playerPosition = object.playerPosition;
+            cell.playerCollege = object.playerCollege;
+            
+            object.index = indexPath.row;
+            
+            return cell
         }
-        cell.playerName = object.playerName;
-        cell.playerNumber = object.playerNumber;
-        cell.playerPosition = object.playerPosition;
-        cell.playerCollege = object.playerCollege;
-        
-        object.index = indexPath.row;
-        
-        return cell
+
     }
 
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

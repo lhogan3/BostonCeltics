@@ -16,6 +16,9 @@ class PlayerUITableViewCell: UITableViewCell{
     var playerCollege:String = "";
 
 
+    @IBOutlet weak var grayPlayerPhoto: UIImageView!
+    @IBOutlet weak var grayPlayerNumber: UILabel!
+    @IBOutlet weak var grayPlayerName: UILabel!
     @IBOutlet weak var playerPhoto: UIImageView!
     @IBOutlet weak var playerNameLabel: UILabel!
     @IBOutlet weak var playerNumberLabel: UILabel!
