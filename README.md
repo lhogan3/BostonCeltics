@@ -8,4 +8,6 @@ An iOS application created for CS295 - Mobile Application Development II at the 
 * **Master View Editing Capabilities:** Edit and add Players with "+" and "Edit" buttons in a UINavigationBar
 * **Delete from Detail View:** User can delete Player from within detail view with a trash can button in a UIToolBar.
 * **Archiving:** Data is saved upon exiting, so it can be viewed between invocations of the app.
-## 
+## Running the Application
+* Make sure you have downloaded/installed the latest version of XCode. This can be found here: https://developer.apple.com/xcode/
+* Once you have pulled the repository, all you will need to do is run the application once it is open in XCode. 
